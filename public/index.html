@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/49da160318.js" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
+  </head>
+
+
+<body>
+  
+
+
+  <div id="loadingScreen"></div>
+  <div id="loading">
+
+    <div>
+      <label for="name">Choose your Tulip Name : </label><br>
+      <input type="text" id="textForm" maxlength="12" size="15"><br>
+      <input type="button" id="buttonForm" value="Ok">
+    </div>
+
+  </div>
+
+  <div class="main_box">
+
+    <input type="checkbox" id="check" checked>
+
+    <div class="btn_one">
+      <label for="check">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </div>
+
+    <div class="sidebar_menu">
+
+      <div class="logo">
+        <a>Le Jardin à Tulipes</a>
+      </div>
+
+      <div class="btn_two">
+          <label for="check">
+            <i class="fas fa-times"></i>
+          </label>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li class="click" id="add">
+            <i class="fas fa-plus"></i>
+            <a id="addText">Add a Tulip</a>
+          </li>
+          <li class="click" id="water">
+            <i class="fas fa-droplet"></i>
+            <a id="waterText">Water your Tulip</a>
+          </li>
+          <hr id="button-hr">
+          <li class="click" id="your">
+            <i class="fa-solid fa-seedling"></i>
+            <a>Your Tulip</a>
+          </li>
+          <div class="content" id="your-content">
+            <img id="tulipPic" src="https://cdn.glitch.global/8c20220c-af71-4768-a86a-e5f46714c3b4/tulipe.png?v=1677883683788">
+            <label class="fancy-checkbox">
+              <input type="checkbox" class="visible" id="yourVisible">
+              <i class="fa-solid fa-eye-slash unchecked visible"></i>
+              <i class="fa-solid fa-eye checked visible"></i>
+            </label>
+            
+            
+            <p>Life Left <p class="values" id="secondsLeft">0</p> </p>
+            <p>Life Time <p class="values" id="secondsTime">0</p> </p>
+            <p id="tulipName">Nowadays407</p>
+          </div>
+          <hr id="your-hr">
+          <li class="click" id="selected">
+            <i class="fas fa-arrow-pointer"></i>
+            <a>Selected Tulip</a>
+          </li>
+          <div class="content" id="selected-content">
+            <img id="tulipPicS" src="https://cdn.glitch.global/8c20220c-af71-4768-a86a-e5f46714c3b4/tulipe.png?v=1677883683788">
+            <label class="fancy-checkbox">
+              <input type="checkbox" class="visible" id="selectedVisible" checked>
+              <i class="fa-solid fa-eye-slash unchecked visible"></i>
+              <i class="fa-solid fa-eye checked visible"></i>
+            </label>
+
+            <p>Life Left<p class="values" id="secondsLeftS">0</p> </p>
+            <p>Life Time <p class="values" id="secondsTimeS">0</p> </p>
+            <p id="tulipNameS"></p>
+          </div>
+          <hr id="selected-hr">
+
+        </ul>
+        <div id="waterOff"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="zoom">
+          <div id="rectlimit" class="rectlimit">
+            <div id="rectlimit2"  class="rectlimit2"></div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+  -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+  user-select: none; /* Propriété standard */
+}
+.main_box {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+.main_box .sidebar_menu {
+  position: fixed;
+  height: 100vh;
+  width: 320px;
+  left: -320px;
+  background: rgba(20, 20, 20, 0.6);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  transition: all 0.3s linear;
+  z-index: 97;
+}
+.sidebar_menu .logo {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.5);
+}
+.sidebar_menu .logo a {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 40px;
+  line-height: 60px;
+  text-decoration: none;
+}
+.sidebar_menu .menu {
+  position: absolute;
+  top: 65px;
+  width: 100%;
+}
+.sidebar_menu .menu li {
+  margin-top: 6px;
+  padding: 14px 20px;
+}
+.sidebar_menu .menu i {
+  color: #fff;
+  font-size: 20px;
+  padding-right: 8px;
+}
+.sidebar_menu .menu a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+.sidebar_menu .menu li:hover {
+  border-left: 1px solid #fff;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+.sidebar_menu .social_media i:hover {
+  opacity: 1;
+  transition: all 0.2s linear;
+  transform: scale(1.01);
+}
+#check {
+  display: none;
+}
+.main_box .btn_one i {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+.sidebar_menu .btn_two i {
+  color: #fff;
+  font-size: 25px;
+  line-height: 60px;
+  position: absolute;
+  left: 280px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
+#check:checked ~ .btn_one i {
+  opacity: 0;
+}
+#check:checked ~ .sidebar_menu .btn_two i {
+  opacity: 1;
+}
+.content {
+  width: 320px;
+  text-align: justify;
+  display: inline-block;
+  padding: 14px 20px;
+}
+.content img {
+  float: right;
+  width: 18%;
+  height: auto;
+  margin-right: 15px;
+}
+.content p,
+.values {
+  font-size: 20px;
+  color: #fff;
+}
+.content p {
+  margin-left: 20px;
+}
+hr {
+  width: 80%;
+  margin: 10px auto;
+}
+.click {
+  cursor: pointer;
+}
+#waterOff {
+  display: none;
+  position: absolute;
+  top: 6px;
+  cursor: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 60px;
+  width: 320px;
+}
+#waterText{
+  font-size: 18px;
+}
+
+#loadingScreen {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 98;
+}
+#loading {
+  display: none;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 200px;
+  min-height: 200px;
+  text-align: center;
+  background-color: rgba(20, 20, 20, 0.6);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+  color: #fff;
+  border-radius: 15px 5px;
+  z-index: 99;
+}
+#loading > div {
+  margin: auto;
+  text-align: center;
+}
+form > input:first-of-type {
+  margin: 20px auto 5px auto;
+}
+.visible {
+  float: right;
+  cursor: pointer;
+}
+
+.fancy-checkbox input[type="checkbox"],
+.fancy-checkbox .checked {
+  display: none;
+}
+
+.fancy-checkbox input[type="checkbox"]:checked ~ .checked {
+  display: block;
+  float: right;
+}
+
+.fancy-checkbox input[type="checkbox"]:checked ~ .unchecked {
+  display: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("https://cdn.glitch.global/8c20220c-af71-4768-a86a-e5f46714c3b4/grass-modified.jpg?v=1677883679343");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#zoom {
+  width: 3000px;
+  height: 540px;
+  transform-origin: 0px 0px;
+  transform: scale(1) translate(0px, 0px);
+  display: flex;
+  position: relative;
+  left: 5%;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+}
+#cible {
+  width: 75px;
+  display: inline-block;
+  border: 1px solid grey;
+  cursor: move;
+  vertical-align: top;
+  position: absolute;
+}
+.rectlimit {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: antiquewhite;
+  background-image: url("https://cdn.glitch.global/8c20220c-af71-4768-a86a-e5f46714c3b4/grass-extended.png?v=1677883674185");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.rectlimit2 {
+  height: 320px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.tul {
+  position: absolute;
+  width: 75px;
+  z-index: 98;
+  top: 0px;
+  left: 0px;
+}
+#zoom > img {
+  z-index: 105;
+}
+.rectlimit2 > img {
+  z-index: 106;
+}
