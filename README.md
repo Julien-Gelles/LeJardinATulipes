@@ -31,7 +31,7 @@ It uses Socket.IO to manage real-time communication between the server and clien
 
 Freely hosted on **[Glitch](https://glitch.com/)** and available at the web address: **https://lejardinatulipe.glitch.me**
 
-<img src="img/garden.png">
+<img src="img/garden.jpg">
 
 ## How To Use
 
@@ -58,7 +58,7 @@ DB_STRING = 'mongodb+srv://username:password@cluster0.nvr1sil.mongodb.net/?retry
 
 Alternatively, feel free to modify the code below in `server.js` , as you prefer :
 
-<img src="img/mongoSetup.png">
+<img src="img/mongoSetup.jpg">
 
 ### Run
 
@@ -80,13 +80,13 @@ Users can water their tulip every hour to add 6 hours to its lifespan.
 
 As a tulip exists over time, its appearance will evolve. Currently, this concept is not extensively developed but serves as a straightforward avenue for future improvement.
 
-<img src="img/tulipes.png">
+<img src="img/tulipes.jpg">
 
 ### Tulips Informations
 
 Real-time information about one's own tulip or another tulip can be displayed by clicking on it.
 
-<img src="img/stats.png">
+<img src="img/stats.jpg">
 
 ## Other Features
 
