@@ -23,7 +23,7 @@ LE JARDIN A TULIPES
 This project is as a real-time community canvas garden, enabling users to engage with virtual tulips by adding new ones, watering them, and accessing details about their respective tulips.<br>
 It uses Socket.IO to manage real-time communication between the server and clients and MongoDB to store tulips datas.
 
-Freely hosted on **[Glitch](https://glitch.com/)** and available at the web address: **https://lejardinatulipe.glitch.me**
+Freely hosted on **[Glitch](https://glitch.com/)** and available at the web address: **https://lejardinatulipes.glitch.me**
 
 <img src="img/garden.jpg">
 
