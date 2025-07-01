@@ -1,5 +1,7 @@
 <h1 align="center">
 LE JARDIN A TULIPES
+  
+![Project Status](https://img.shields.io/badge/status-inactive-red)
 </h1>
 
 <p align="center">
@@ -23,7 +25,7 @@ LE JARDIN A TULIPES
 This project is as a real-time community canvas garden, enabling users to engage with virtual tulips by adding new ones, watering them, and accessing details about their respective tulips.<br>
 It uses Socket.IO to manage real-time communication between the server and clients and MongoDB to store tulips datas.
 
-Freely hosted on **[Glitch](https://glitch.com/)** and available at the web address: **https://lejardinatulipes.glitch.me**
+~~Freely hosted on **[Glitch](https://glitch.com/)** and available at the web address: **https://lejardinatulipes.glitch.me**~~ (**2025 edit : No more available**)
 
 <img src="img/garden.jpg">
 
